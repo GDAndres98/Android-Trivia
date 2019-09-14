@@ -1,9 +1,10 @@
 package co.poligran.android_trivia;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Question {
+public class Question  implements Serializable {
     private String question;
     private ArrayList<String> options;
     private ArrayList<String> randomOrder;
@@ -42,6 +43,10 @@ public class Question {
         if(result.get(i)==0)
             return true;
         return false;
+    }
+
+    public boolean checkQuestion(String i){
+        return i.equals(options.get(0));
     }
 
 
