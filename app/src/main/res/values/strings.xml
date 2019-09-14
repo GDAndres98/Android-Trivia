@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android-Trivia</string>
+    <string name="app_countwin">CORRECTAS</string>
+    <string name="app_countlos">INCORRECTAS</string>
+
 </resources>
